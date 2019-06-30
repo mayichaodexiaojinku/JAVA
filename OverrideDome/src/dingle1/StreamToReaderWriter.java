@@ -14,7 +14,7 @@ public class StreamToReaderWriter
 		FileInputStream fin = new FileInputStream(file);
 		FileOutputStream fout = new FileOutputStream("copy-of-file.txt");
 		// 字节流向字符流转换
-		InputStreamReader isr = new InputStreamReader(fin, "GBK");
+		InputStreamReader isr = new InputStreamReader(fin,"GBK");
 		OutputStreamWriter osw = new OutputStreamWriter(fout, "GBK");
 		System.out.println("Current charset of Reader   is :"
 				+ isr.getEncoding());
